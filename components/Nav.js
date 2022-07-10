@@ -16,7 +16,7 @@ const Nav = () => {
                   Education
                </a>
 
-               <Link href={'/resource'}>
+               <Link href={'https://arunprajapati.com.np/resource'}>
                   <a href='' className=' opacity-50'>
                      Resources
                   </a>
