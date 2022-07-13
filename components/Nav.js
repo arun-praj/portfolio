@@ -9,7 +9,7 @@ const Nav = () => {
          <div className='  w-full sm:max-w-[75ch] m-auto px-5 flex justify-between items-center'>
             <a href='https://arunprajapati.com.np/#'>ARUN K.Praj</a>
             <div className=' text-sm flex gap-5'>
-               <a href='#projects' className=' opacity-50'>
+               <a href='https://arunprajapati.com.np/#projects' className=' opacity-50'>
                   Projects
                </a>
                <a href='https://arunprajapati.com.np/#education' className=' opacity-50'>
