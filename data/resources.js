@@ -147,12 +147,13 @@ export const resources = [
             image: '/sites/monitorcontrol.png',
          },
          {
-            id: 'g',
-            title: 'deemix',
-            description: 'deemix is a barebone deezer downloader library ',
-            link: 'https://github.com/MonitorControl/MonitorControl',
+            id: 'h',
+            title: 'Sound Source',
+            description:
+               'SounceSource lets you adjust your input, output, and sound-effects devices and volume settings in mere moments, right from the menu bar. ',
+            link: 'https://www.torrentmac.net/?s=sound+sourcel',
             favourite: false,
-            tags: ['Music', 'Mac/Windows', 'Open-source'],
+            tags: ['Music', 'Mac', ''],
             image: '/sites/deemix.jpg',
          },
       ],
