@@ -3,7 +3,7 @@ const nextConfig = {
    reactStrictMode: true,
    rewrites: [
       {
-         source: '/:path*',
+         source: '/resource',
          has: [
             {
                type: 'host',
@@ -13,7 +13,7 @@ const nextConfig = {
          destination: '/resource',
       },
       {
-         source: '/:path*',
+         source: '/',
          has: [
             {
                type: 'host',
