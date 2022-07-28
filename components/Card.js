@@ -38,7 +38,7 @@ const Card = ({ data: { title, image, description, tags, favourite, link, extraD
                            <polyline points='15 4 20 4 20 9' />
                         </svg>
                      </div>
-                     <div className={!favourite && 'hidden'}>
+                     <div className={!favourite ? 'hidden' : ''}>
                         <Image src={'/icons/heart.svg'} title='Editors choice' height='12' width={'12'} alt='heart logo' />
                      </div>
                   </div>
