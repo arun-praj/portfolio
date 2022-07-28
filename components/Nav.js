@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 
 const Nav = () => {
    const router = useRouter()
-   console.log({ basePath: router.basePath })
+
    return (
       <nav className='fixed  h-16 z-40 w-full flex justify-between backdrop-blur-[20px] backdrop-saturate-150  bg-[#0D0D1050]'>
          <div className='  w-full sm:max-w-[75ch] m-auto px-5 flex justify-between items-center'>
@@ -15,12 +15,12 @@ const Nav = () => {
                <a href='https://arunprajapati.com.np/#education' className=' opacity-50'>
                   Education
                </a>
-
+               {/* 
                <Link href={'https://arunprajapati.com.np/resource'}>
                   <a href='' className=' opacity-50'>
                      Resources
                   </a>
-               </Link>
+               </Link> */}
             </div>
          </div>
       </nav>
