@@ -7,14 +7,14 @@ export default function Home() {
          <main className=' h-full w-full'>
             {/* <Nav /> */}
             <article className=' max-w-[75ch] m-auto pt-6 pb-28 px-5'>
-               <h1 className='text-3xl text-white font-bold mt-12 mb-5'>Resources</h1>
+               <h1 className='text-3xl text-white font-bold mt-12 mb-5'>Bookmark</h1>
                <p>{'  Tools, resources and sites that I use for web development and more ;). Feel free to use them. '} </p>
                <div className='h-4'></div>
                <div>
                   {resources.map((resource, index) => {
                      return (
                         <div key={resource.id}>
-                           <div className={index !== 1 ? 'hidden' : ''}>
+                           <div className={index !== 2 ? 'hidden' : ''}>
                               <div className=' h-4'></div>
                               <h1 className='text-3xl text-white font-bold mt-8 mb-5'>Before we go any further.</h1>
                               <p>
