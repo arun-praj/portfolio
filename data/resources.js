@@ -211,4 +211,19 @@ export const resources = [
          },
       ],
    },
+   {
+      id: 8123,
+      section: ' Bookmarks',
+      cards: [
+         {
+            id: 'a',
+            title: 'tiptap',
+            description: 'The headless wysiwyg editor framework for web artisans.',
+            link: 'https://tiptap.dev/',
+            favourite: false,
+            tags: ['Utility', 'Web', 'Freemium', 'Code'],
+            image: '/sites/tiptap.jpeg',
+         },
+      ],
+   },
 ]

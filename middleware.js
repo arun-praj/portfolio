@@ -9,6 +9,7 @@ export function middleware(request) {
       pathname.startsWith('/static') || // exclude static files
       pathname.includes('.') // exclude all files in the public folder
    ) {
+      //required at root level
       return NextResponse.next()
    }
    if (wildcard === 'movie') {
