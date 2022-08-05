@@ -9,7 +9,7 @@ export default function Home() {
             <article className=' max-w-[75ch] m-auto pt-12 pb-28 px-5'>
                <div className=' h-16'></div>
                <h1 className='text-3xl text-white font-bold mt-8 mb-5'>Hi, I&apos;m Arun</h1>
-               <p>I&apos;m a software developer and an amateur photographer. I&apos;m currently studying bachlor in Khwopa Engineering College. </p>
+               <p>I&apos;m a software developer and an amateur photographer. I&apos;m currently studying bachelor in Khwopa Engineering College. </p>
                <p>{`My goal is to become a web developer and a devops engineer. If you wish to reach out,find me here ;)`} </p>
 
                <div className='my-4 flex gap-2'>
