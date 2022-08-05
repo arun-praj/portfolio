@@ -395,10 +395,29 @@ export default function Home() {
                            </div>
                         </div>
                         <div className=' text-sm flex gap-2 mt-1 bg-white w-[14px] rounded-full'>
-                           <Image src={'/icons/nextjs-icon.svg'} alt='react' height='14px' width={14} />
+                           <Image src={'/icons/nextjs-icon.svg'} title='Next Js' alt='react' height='14px' width={14} />
                         </div>
                         <p className='mt-4 mb-4 text-sm' id='education'>
-                           This Webpage you are looking at.{' '}
+                           This Webpage you are looking at. Plus you can visit subdomains.
+                           <br />
+                           <a
+                              target={'_blank'}
+                              rel='noreferrer'
+                              href='https://bookmark.arunprajapati.com.np'
+                              className='w-full link-btn hover:bg-[rgb(234,179,8)] hover:text-[rgb(41,37,36)] cursor-pointer px-[8px] py-[1px]  items-center gap-1'
+                           >
+                              bookmark.arunprajapati.com.np
+                           </a>
+                           ,
+                           <a
+                              target={'_blank'}
+                              rel='noreferrer'
+                              href='https://bookmark.arunprajapati.com.np'
+                              className='w-full link-btn hover:bg-[rgb(234,179,8)] hover:text-[rgb(41,37,36)] cursor-pointer px-[8px] py-[1px]  items-center gap-1'
+                           >
+                              movie.arunprajapati.com.np
+                           </a>
+                           .
                         </p>
                      </section>
                   </li>
