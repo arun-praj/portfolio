@@ -139,7 +139,7 @@ export default function Home() {
                               <a
                                  target={'_blank'}
                                  rel='noreferrer'
-                                 href='https://github.com/arun-praj/marriage-card-point-calculator'
+                                 href='https://github.com/arun-praj/Sentiment-Analysis'
                                  className=' link-btn hover:bg-[rgb(234,179,8)] hover:text-[rgb(41,37,36)] cursor-pointer px-[8px] py-[1px] flex items-center gap-1'
                               >
                                  <span>Source</span>
@@ -256,7 +256,7 @@ export default function Home() {
                               <a
                                  target={'_blank'}
                                  rel='noreferrer'
-                                 href='https://github.com/arun-praj/marriage-card-point-calculator'
+                                 href='https://github.com/arun-praj/DairyEcommerce'
                                  className=' link-btn hover:bg-[rgb(234,179,8)] hover:text-[rgb(41,37,36)] cursor-pointer px-[8px] py-[1px] flex items-center gap-1'
                               >
                                  <span>Source</span>
