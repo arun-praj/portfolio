@@ -38,8 +38,6 @@ export default function Home() {
                         </div>
                      )
                   })}
-
-                  {/* <Card bgImage='' title={'Tabler Icons'} description='asdf' /> */}
                </div>
             </article>
          </main>

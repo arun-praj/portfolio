@@ -22,6 +22,15 @@ export const resources = [
             image: '/sites/tablericons.png',
          },
          {
+            id: '1c',
+            title: 'Hero Icons',
+            description: 'Icons by tailwindcss.',
+            link: 'https://heroicons.com/',
+            favourite: false,
+            tags: ['Icons', 'Free', 'tailwind'],
+            image: '/sites/heroicon.png',
+         },
+         {
             id: 'a',
             title: 'tiptap',
             description: 'The headless wysiwyg editor framework for web artisans.',
