@@ -469,7 +469,7 @@ export default function Home() {
                   <h3 className=' font-medium  text-lg mt-16'>2022</h3>
 
                   <div className='flex gap-3 text-sm  items-center my-8'>
-                     <div className=' mr-8 min-w-[50px]'>Aug 15</div>
+                     <div className=' mr-8 min-w-[50px]'>15 Aug</div>
                      <div className='link-btn'> Bachelors of Computer Engineering, Khwopa Engineering College | Libali, Bhaktapur </div>
                   </div>
                   <h3 className=' font-medium  text-lg mt-8'>2021</h3>
