@@ -467,10 +467,7 @@ export default function Home() {
                <div>
                   <h2 className=' text-xl text-white font-semibold mt-8 mb-5'>Education and training</h2>
                   <h3 className=' font-medium  text-lg mt-16'>2022</h3>
-                  <div className='flex gap-3 text-sm  items-center my-8'>
-                     <div className=' mr-8 min-w-[50px]'>Current</div>
-                     <div className='link-btn'> Software Engineer I in Cotiviti Pvt. Ltd. </div>
-                  </div>
+
                   <div className='flex gap-3 text-sm  items-center my-8'>
                      <div className=' mr-8 min-w-[50px]'>Aug 15</div>
                      <div className='link-btn'> Bachelors of Computer Engineering, Khwopa Engineering College | Libali, Bhaktapur </div>
