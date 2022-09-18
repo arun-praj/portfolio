@@ -48,6 +48,44 @@ export default function Home() {
                      }}
                   >
                      <section>
+                        <h3>Fullstack Developer</h3>
+                        <div className='flex justify-between text-sm'>
+                           <a href='https://www.cotiviti.com.np/' target={'_blank'} rel='noreferrer' className=' hover:text-[rgb(234,179,8)]'>
+                              <span className='flex items-center gap-1'>
+                                 Cotiviti Nepal Pvt. Ltd.
+                                 <svg
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    className='icon icon-tabler icon-tabler-external-link'
+                                    width='14'
+                                    height='14'
+                                    viewBox='0 0 24 24'
+                                    strokeWidth='1.5'
+                                    stroke='#b0b0b0'
+                                    fill='none'
+                                    strokeLinecap='round'
+                                    strokeLinejoin='round'
+                                 >
+                                    <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                                    <path d='M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5' />
+                                    <line x1='10' y1='14' x2='20' y2='4' />
+                                    <polyline points='15 4 20 4 20 9' />
+                                 </svg>
+                              </span>
+                           </a>
+                           <h4> Aug 2022 - Current</h4>
+                        </div>
+                        <p className='mt-4 mb-4 text-sm' id='projects'>
+                           Working as a fullstack developer.
+                        </p>
+                     </section>
+                  </li>
+                  <li
+                     className='pb-2 pl-0 mb-4  border-[rgb(28,25,23)] before:contents'
+                     style={{
+                        borderBottomWidth: '1px',
+                     }}
+                  >
+                     <section>
                         <h3>Fullstack Developer Intern</h3>
                         <div className='flex justify-between text-sm'>
                            <a href='https://www.cotiviti.com.np/' target={'_blank'} rel='noreferrer' className=' hover:text-[rgb(234,179,8)]'>
@@ -72,7 +110,7 @@ export default function Home() {
                                  </svg>
                               </span>
                            </a>
-                           <h4> 03/22 - 05/22</h4>
+                           <h4> March 2022 - May 2022</h4>
                         </div>
                         <p className='mt-4 mb-4 text-sm' id='projects'>
                            Developed a Synchron app where users fill up daily standups of their meeting using Django,Postgres &amp; next.js.
@@ -96,7 +134,7 @@ export default function Home() {
                               <a
                                  target={'_blank'}
                                  rel='noreferrer'
-                                 href='https://github.com/arun-praj/marriage-card-point-calculator'
+                                 href='https://github.com/izenish/SkinCancerDetection'
                                  className=' link-btn hover:bg-[rgb(234,179,8)] hover:text-[rgb(41,37,36)] cursor-pointer px-[8px] py-[1px] flex items-center gap-1'
                               >
                                  <span>Source</span>
@@ -413,7 +451,7 @@ export default function Home() {
                               target={'_blank'}
                               rel='noreferrer'
                               href='https://bookmark.arunprajapati.com.np'
-                              className='w-full link-btn hover:bg-[rgb(234,179,8)] hover:text-[rgb(41,37,36)] cursor-pointer px-[8px] py-[1px]  items-center gap-1'
+                              className='w-full link-btn hover:bg-[rgb(234,179,8)] hover:text-[rgb(41,37,36)] cursor-pointer px-[8px] py-[1px] break-words items-center gap-1'
                            >
                               movie.arunprajapati.com.np
                            </a>
@@ -431,6 +469,10 @@ export default function Home() {
                   <h3 className=' font-medium  text-lg mt-16'>2022</h3>
                   <div className='flex gap-3 text-sm  items-center my-8'>
                      <div className=' mr-8 min-w-[50px]'>Current</div>
+                     <div className='link-btn'> Software Engineer I in Cotiviti Pvt. Ltd. </div>
+                  </div>
+                  <div className='flex gap-3 text-sm  items-center my-8'>
+                     <div className=' mr-8 min-w-[50px]'>Aug 15</div>
                      <div className='link-btn'> Bachelors of Computer Engineering, Khwopa Engineering College | Libali, Bhaktapur </div>
                   </div>
                   <h3 className=' font-medium  text-lg mt-8'>2021</h3>
