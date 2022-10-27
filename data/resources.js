@@ -67,6 +67,15 @@ export const resources = [
             tags: ['Utility', 'Web'],
             image: '/sites/tinywow.png',
          },
+         {
+            id: 'sd',
+            title: 'Magic Erasor',
+            description: 'Remove unwanted things from images in seconds.',
+            link: 'https://www.magiceraser.io/',
+            favourite: false,
+            tags: ['Utility', 'Web'],
+            image: '/sites/magiceraser.png',
+         },
       ],
    },
    {
