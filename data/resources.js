@@ -6,7 +6,8 @@ export const resources = [
          {
             id: '1a',
             title: 'Toolkit',
-            description: '672 hand-picked tools & resources for web designers & developers.',
+            description:
+               '672 hand-picked tools & resources for web designers & developers.',
             link: 'https://toolkit.addy.codes/',
             favourite: false,
             tags: ['Collections'],
@@ -15,7 +16,8 @@ export const resources = [
          {
             id: '1b',
             title: 'Tabler Icons',
-            description: '1424 Open source free SVG icons.For commercial use.',
+            description:
+               '1424 Open source free SVG icons.For commercial use.',
             link: 'https://tablericons.com/',
             favourite: false,
             tags: ['Icons', 'Free'],
@@ -33,7 +35,8 @@ export const resources = [
          {
             id: 'a',
             title: 'tiptap',
-            description: 'The headless wysiwyg editor framework for web artisans.',
+            description:
+               'The headless wysiwyg editor framework for web artisans.',
             link: 'https://tiptap.dev/',
             favourite: false,
             tags: ['Package', 'Web', 'Wysisyg', 'Editor'],
@@ -48,11 +51,21 @@ export const resources = [
          {
             id: 'a',
             title: 'Flow CV',
-            description: 'Best Freemium CV and coverletter maker out there.',
+            description:
+               'Best Freemium CV and coverletter maker out there.',
             link: 'https://www.torrentmac.net/?s=cleanmymac',
             favourite: true,
             tags: ['Utility', 'Web', 'Freemium'],
             image: '/sites/flowcv.png',
+         },
+         {
+            id: 'Tiniwow',
+            title: '',
+            description: 'Tools That Solve Your Files Problem.',
+            link: 'https://tinywow.com/',
+            favourite: false,
+            tags: ['Utility', 'Web'],
+            image: '/sites/tinywow.png',
          },
       ],
    },
@@ -72,7 +85,8 @@ export const resources = [
          {
             id: '2b',
             title: 'xManager',
-            description: 'Manage and install all versions of the spotify app',
+            description:
+               'Manage and install all versions of the spotify app',
             link: 'https://github.com/xManager-v2/xManager-Spotify',
             favourite: true,
             tags: ['Music', 'Modded App', 'Open Source'],
@@ -81,7 +95,8 @@ export const resources = [
          {
             id: '2c',
             title: 'Mobilism',
-            description: 'App store to download android paid apps for free',
+            description:
+               'App store to download android paid apps for free',
             link: 'https://mobilism.app/',
             favourite: false,
             tags: ['App Store', 'Free paid apps'],
@@ -115,7 +130,8 @@ export const resources = [
          {
             id: '1a',
             title: 'CleanMyMac X',
-            description: 'It cleans megatons of junk and makes your computer run faster.',
+            description:
+               'It cleans megatons of junk and makes your computer run faster.',
             link: 'https://www.torrentmac.net/?s=cleanmymac',
             favourite: true,
             tags: ['Utility', 'Mac', 'Paid app'],
@@ -135,7 +151,8 @@ export const resources = [
          {
             id: '1c',
             title: 'iStat Menus',
-            description: 'iStat Menus lets you monitor your system right from the menubar.',
+            description:
+               'iStat Menus lets you monitor your system right from the menubar.',
             link: 'https://www.torrentmac.net/?s=pro+mouse',
             favourite: false,
             tags: ['Utility', 'Mac', 'Paid app'],
@@ -154,7 +171,8 @@ export const resources = [
          {
             id: '1d',
             title: 'Mos',
-            description: 'A lightweight tool used to smooth scrolling and set scroll direction on macOS',
+            description:
+               'A lightweight tool used to smooth scrolling and set scroll direction on macOS',
             link: 'https://github.com/Caldis/Mos',
             favourite: false,
             tags: ['Utility', 'Mac', 'Open-source'],
@@ -173,7 +191,8 @@ export const resources = [
          {
             id: 'g',
             title: 'MonitorControl',
-            description: 'Controls your external display brightness and volume and shows native OSD. ',
+            description:
+               'Controls your external display brightness and volume and shows native OSD. ',
             link: 'https://github.com/MonitorControl/MonitorControl',
             favourite: false,
             tags: ['Utility', 'Mac/Windows', 'Open-source'],
@@ -202,7 +221,8 @@ export const resources = [
          {
             id: 'ia',
             title: 'Magnet',
-            description: 'Easily snap windows into various sizes and positions by simply dragging them to the edges and corners of the screen',
+            description:
+               'Easily snap windows into various sizes and positions by simply dragging them to the edges and corners of the screen',
             link: 'https://www.torrentmac.net/soundsource-5-5-1/',
             favourite: true,
             tags: ['Utility', 'Mac', 'Paid'],
@@ -212,7 +232,8 @@ export const resources = [
          {
             id: 'iad',
             title: 'MacDrive 10',
-            description: 'MacDrive 10 for Windows is the gold standard for accessing Mac-formatted media on a Windows PC',
+            description:
+               'MacDrive 10 for Windows is the gold standard for accessing Mac-formatted media on a Windows PC',
             link: 'https://www.torrentmac.net/soundsource-5-5-1/',
             favourite: false,
             tags: ['Utility', 'Windows', 'Paid'],
@@ -221,7 +242,8 @@ export const resources = [
          {
             id: 'iadsadf',
             title: 'BlockTheSpot',
-            description: 'A multi-purpose adblocker and skip-bypass for the Windows Spotify desktop application.',
+            description:
+               'A multi-purpose adblocker and skip-bypass for the Windows Spotify desktop application.',
             link: 'https://github.com/mrpond/BlockTheSpot',
             favourite: false,
             tags: ['Music', 'Windows', 'Open-source'],
