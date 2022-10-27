@@ -60,7 +60,7 @@ export const resources = [
          },
          {
             id: 'Tiniwow',
-            title: '',
+            title: 'Tiniwow',
             description: 'Tools That Solve Your Files Problem.',
             link: 'https://tinywow.com/',
             favourite: false,
