@@ -18,6 +18,7 @@ export default async function handler(
       case 'GET':
          try {
             const foundNote = await prisma.note.findFirst({
+               //@ts-ignore
                where: { id: query.note_id },
             })
             res.status(200).json({ note: foundNote, success: true })
