@@ -55,6 +55,7 @@ const Editor = ({ query }) => {
       )
       const data = await foundNote.json()
       if (data.success) {
+         console.log(data)
          setInitialData(data?.note?.content)
       }
    }

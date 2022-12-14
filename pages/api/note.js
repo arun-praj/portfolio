@@ -11,7 +11,6 @@ export default async function handler(req, res) {
    switch (method) {
       case 'GET':
          try {
-            // break
             const foundNote = await prisma.note.findFirst({
                //@ts-ignore
                where: { id: query.note_id },
