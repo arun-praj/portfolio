@@ -7,7 +7,7 @@ let List = ''
 let Table = ''
 if (typeof window !== 'undefined') {
    Header = require('@editorjs/header')
-   Link = require('@editorjs/Link')
+   Link = require('@editorjs/link')
    InlineCode = require('@editorjs/inline-code')
    Code = require('@calumk/editorjs-codeflask')
    Codebox = require('@bomdi/codebox')
