@@ -47,7 +47,8 @@
       height: max-content;
       border-radius: 0.125rem;
       font-weight: 500;
-      transition-property: background-color, border-color, color, fill, stroke;
+      transition-property: background-color, border-color, color, fill,
+         stroke;
       transition-duration: 0.15s;
       transition-timing-function: linear;
       padding-top: 0.25rem;
