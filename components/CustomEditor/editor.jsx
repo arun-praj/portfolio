@@ -115,13 +115,13 @@ const Editor = ({ query }) => {
                               ? JSON.parse(initialData)
                               : initialData
                         }
-                        // defaultValue={initialData}
+                        defaultValue={initialData}
                         inlineToolbar={true}
                         // onChange={() => saveToLocalStorage()}
                      />
                   )}
             </div>
-            {/* {JSON.stringify(initialData)} */}
+            <div className='text-white'>{JSON.stringify(initialData)}</div>
          </div>
       </section>
    )
