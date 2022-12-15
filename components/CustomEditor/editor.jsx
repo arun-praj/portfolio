@@ -64,7 +64,7 @@ const Editor = ({ query }) => {
       if (query?.note_id?.length > 0) {
          searchNote()
       }
-   }, [])
+   }, [query.note_id])
 
    const handleSave = useCallback(async () => {
       setSaveState('Saving')
