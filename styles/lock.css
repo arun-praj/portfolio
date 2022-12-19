@@ -1,5 +1,16 @@
 /* :::::::::::::: Required CSS */
 /* Locked */
+* {
+   box-sizing: border-box;
+   --locked-color: #5fadbf;
+   --unlocked-color: #ff5153;
+}
+.lock-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 400px;
+}
 .lock {
    width: 24px;
    height: 21px;
@@ -26,8 +37,8 @@
 .lock:before {
    content: '';
    display: block;
-   width: 10px;
-   height: 10px;
+   width: 16px;
+   height: 16px;
    bottom: 100%;
    position: absolute;
    left: 50%;
@@ -41,7 +52,7 @@
 }
 /* Locked Hover */
 .lock:hover:before {
-   height: 12px;
+   height: 14px;
 }
 /* Unlocked */
 .unlocked {
@@ -65,7 +76,7 @@
    transform: rotate(3deg);
 }
 .unlocked:hover:before {
-   height: 10px;
+   height: 14px;
    left: 40%;
    bottom: 124%;
    transform: rotate(-30deg);

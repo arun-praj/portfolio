@@ -1,24 +1,31 @@
-import React, { useEffect, useState } from 'react'
+import Router from 'next/router'
+import prisma from '../../../lib/prisma'
 
-const Index = () => {
-   const [initialData, setInitialData] = useState()
-
-   async function searchNote() {
-      const foundNote = await fetch(`/api/note?note_id=typescript`, {
-         method: 'GET',
-      })
-      const data = await foundNote.json()
-      console.log(data)
-      if (data.success) {
-         setInitialData(data?.note?.content)
-      }
-   }
-   useEffect(() => {
-      searchNote()
-   }, [])
-   console.log(initialData)
-
-   return <div>{JSON.stringify(initialData)}asdf</div>
+const Index = ({ notes }) => {
+   return (
+      <div>
+         <button onClick={() => Router.push('/new-note')}>
+            Add new note
+         </button>
+         {notes.map((data) => {
+            return (
+               <div
+                  key={data.id}
+                  className='py-2 px-2 border-b-[1px] w-full border-[#dcdadb]'>
+                  <a href={`/${data.id}`}>{data.title}</a>
+               </div>
+            )
+         })}
+      </div>
+   )
 }
-
+export async function getStaticProps() {
+   const notes = await prisma.note.findMany({})
+   return {
+      props: {
+         notes: JSON.parse(JSON.stringify(notes)),
+      },
+      revalidate: 10,
+   }
+}
 export default Index

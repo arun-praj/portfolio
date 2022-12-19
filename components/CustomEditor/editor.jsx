@@ -1,50 +1,27 @@
 import React, { useRef, useState, useCallback, useEffect } from 'react'
 
-// "@editorjs/checklist": "^1.3.0",
-// "@editorjs/code": "^2.7.0",
-// "@editorjs/delimiter": "^1.2.0",
-// "@editorjs/editorjs": "^2.25.0",
-// "@editorjs/embed": "^2.5.3",
-// "@editorjs/header": "^2.7.0",
-// "@editorjs/image": "^2.6.2",
-// "@editorjs/list": "^1.8.0",
-// "@editorjs/marker": "^1.2.2",
-// "@editorjs/quote": "^2.4.0",
-// "@editorjs/raw": "^2.3.1",
-// "@editorjs/simple-image": "^1.4.1",
-// "@editorjs/table": "^2.1.0",
-// "@editorjs/warning": "^1.2.0",
 import { createReactEditorJS } from 'react-editor-js'
-// import EditorJS from "@editorjs/editorjs";
 import { EDITOR_JS_TOOLS } from './NoSSRConstants'
-
+import { useRouter } from 'next/router'
 const Editor = ({ query }) => {
    const ReactEditorJS = createReactEditorJS()
+   // const [locked, setLocked] = useState(true)
 
    const editorCore = useRef(null)
+   const titleRef = useRef(null)
+   const router = useRouter()
    const [initialData, setInitialData] = useState({
-      time: 1635603431943,
       blocks: [
          {
             id: 'sheNwCUP5A',
             type: 'header',
             data: {
-               text: 'Editor.js',
-               level: 2,
-            },
-         },
-
-         {
-            id: 'fvZGuFXHmK',
-            type: 'header',
-            data: {
-               text: 'Key features',
                level: 3,
             },
          },
       ],
    })
-   const [saveState, setSaveState] = useState('Save')
+   const [saveState, setSaveState] = useState('Publish')
 
    async function searchNote() {
       const foundNote = await fetch(
@@ -55,19 +32,24 @@ const Editor = ({ query }) => {
       )
       const data = await foundNote.json()
       if (data.success) {
-         console.log(data)
          setInitialData(data?.note?.content)
+         titleRef.current.innerText = data?.note.title
       }
    }
 
    useEffect(() => {
-      if (query?.note_id?.length > 0) {
+      if (query?.note_id?.length > 0 && query.note_id !== 'new-note') {
          searchNote()
       }
    }, [query.note_id])
 
    const handleSave = useCallback(async () => {
-      setSaveState('Saving')
+      if (titleRef.current.innerText.length < 1) {
+         titleRef.current.style.borderColor = 'red'
+      } else {
+         titleRef.current.style.borderColor = '#3f3f3f'
+      }
+      setSaveState('Publishing')
       const savedData = await editorCore.current.save()
       const createdNote = await fetch('/api/note', {
          method: 'POST',
@@ -77,16 +59,16 @@ const Editor = ({ query }) => {
          },
          body: JSON.stringify({
             content: savedData,
+            title: titleRef.current.innerText,
             note_id: query?.note_id,
          }),
       })
       const data = await createdNote.json()
       if (data.success) {
-         setSaveState('Saved')
-         console.log('Saved Successfull')
+         router.push(`/${data?.note.id}`)
+         setSaveState('Published')
       } else {
          setSaveState('Failed')
-         console.log('Fail to save')
       }
    })
 
@@ -97,14 +79,35 @@ const Editor = ({ query }) => {
    return (
       <section>
          <div className=' max-w-[820px]  m-auto h-[200px] mt-8 flex flex-col'>
-            <button
-               onClick={() => handleSave()}
-               className=' self-end text-sm flex items-center  text-white py-1 px-4 rounded-md bg-red-500'>
-               {saveState}
-            </button>
+            {/* <div className='lock-container'>
+               <span
+                  className={locked ? 'lock' : 'lock unlocked'}
+                  onClick={() => {
+                     setLocked(!locked)
+                  }}></span>
+            </div> */}
+            <div className='flex justify-between'>
+               <button
+                  onClick={() => router.push('/')}
+                  className='text-sm  items-center  text-white py-1 px-4'>
+                  Back
+               </button>
+               <button
+                  onClick={() => handleSave()}
+                  className=' text-sm  items-center  text-white py-1 px-4 rounded-md bg-red-500'>
+                  {saveState}
+               </button>
+            </div>
+
             <div className=' mt-4 '>
+               <p
+                  contentEditable={true}
+                  ref={titleRef}
+                  data-placeholder='Title'
+                  className='w-full leading-5 tracking-wide bg-[rgb(29,30,31)] outline-none text-[32px] pt-5  pb-3 text-white border-b-[1px]  border-[#3f3f3f] '></p>
+
                {typeof window !== 'undefined' &&
-                  typeof initialData == 'string' && (
+                  typeof initialData === 'string' && (
                      <ReactEditorJS
                         // holder='editorjs'
                         onInitialize={handleInitialize}
@@ -120,8 +123,23 @@ const Editor = ({ query }) => {
                         // onChange={() => saveToLocalStorage()}
                      />
                   )}
+               {typeof initialData === 'object' && (
+                  <ReactEditorJS
+                     // holder='editorjs'
+                     onInitialize={handleInitialize}
+                     tools={EDITOR_JS_TOOLS}
+                     readOnly={false}
+                     data={
+                        typeof initialData === 'string'
+                           ? JSON.parse(initialData)
+                           : initialData
+                     }
+                     defaultValue={initialData}
+                     inlineToolbar={true}
+                     // onChange={() => saveToLocalStorage()}
+                  />
+               )}
             </div>
-            <div className='text-white'>{JSON.stringify(initialData)}</div>
          </div>
       </section>
    )

@@ -72,3 +72,7 @@ p {
    margin-top: 1rem;
    margin-bottom: 1rem;
 }
+p:empty:not(:focus)::before {
+   content: attr(data-placeholder);
+   opacity: 0.3;
+}

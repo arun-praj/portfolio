@@ -1,9 +1,5 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import { create } from 'domain'
-
 import prisma from '../../lib/prisma'
-
-// import { PrismaClient } from '@prisma/client'
 
 export default async function handler(req, res) {
    const { query, method, body } = req
@@ -11,25 +7,48 @@ export default async function handler(req, res) {
    switch (method) {
       case 'GET':
          try {
-            const foundNote = await prisma.note.findFirst({
-               //@ts-ignore
-               where: { id: query.note_id },
-            })
-
-            res.status(200).json({ note: foundNote, success: true })
+            if (query.note_id) {
+               const foundNote = await prisma.note.findFirst({
+                  //@ts-ignore
+                  where: { id: query.note_id },
+               })
+               if (foundNote) {
+                  return res
+                     .status(200)
+                     .json({ note: foundNote, success: true })
+               }
+               prisma.$disconnect()
+               return res.status(404).json({ success: false })
+            } else {
+               const foundNotes = await prisma.note.findMany({})
+               if (foundNotes) {
+                  return res
+                     .status(200)
+                     .json({ notes: foundNotes, success: true })
+               }
+               prisma.$disconnect()
+               return res.status(404).json({ success: false })
+            }
          } catch (e) {
-            res.status(404).json({ success: false })
+            return res.status(404).json({ success: false })
          }
          break
+
       case 'POST':
+         const updateField = {}
+         updateField.content = JSON.stringify(body.content)
+         if (body.title) {
+            updateField.title = body.title
+         }
+
          try {
             const createdNote = await prisma.note.upsert({
                where: { id: body.note_id },
                update: {
-                  content: JSON.stringify(body.content),
+                  ...updateField,
                },
                create: {
-                  content: JSON.stringify(body.content),
+                  ...updateField,
                },
             })
             prisma.$disconnect()

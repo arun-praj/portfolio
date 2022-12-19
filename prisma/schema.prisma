@@ -28,6 +28,8 @@ model Note {
   published Boolean @default(false)
   Folder Folder? @relation(fields: [folderId],references: [id])
   folderId String?
-
+  slug String?
+  title String?
   @@map("notes")
+  @@unique([slug])
 }
