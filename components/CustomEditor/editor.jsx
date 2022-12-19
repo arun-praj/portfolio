@@ -46,6 +46,7 @@ const Editor = ({ query }) => {
    const handleSave = useCallback(async () => {
       if (titleRef.current.innerText.length < 1) {
          titleRef.current.style.borderColor = 'red'
+         return
       } else {
          titleRef.current.style.borderColor = '#3f3f3f'
       }
