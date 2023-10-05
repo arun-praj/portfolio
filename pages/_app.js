@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
    return (
       <div>
          <Head>
-            <script async src="http://192.168.1.100:8919/script.js" data-website-id="3f46c5d9-4384-43b4-a402-ab4fd895c81b"></script>
+            <script async src="https://popper.arunprajapati.com.np/script.js" data-website-id="3f46c5d9-4384-43b4-a402-ab4fd895c81b"></script>
             <title>@Aaaarun</title>
             <meta
                name='description'
