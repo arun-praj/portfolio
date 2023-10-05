@@ -22,10 +22,10 @@ export function middleware(request) {
             url.origin + '/_sites/bookmark' + url.pathname
          )
 
-      case 'notes':
-         return NextResponse.rewrite(
-            url.origin + '/_sites/notes' + url.pathname
-         )
+      // case 'notes':
+      //    return NextResponse.rewrite(
+      //       url.origin + '/_sites/notes' + url.pathname
+      //    )
    }
    // if (wildcard === 'movie') {
    //    let url = request.nextUrl.clone()
