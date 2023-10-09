@@ -555,6 +555,15 @@ export default function Home() {
                   <h2 className=' text-xl text-white font-semibold mt-8 mb-5'>
                      Education and training
                   </h2>
+                  <h3 className=' font-medium  text-lg mt-16'>2023</h3>
+
+                  <div className='flex gap-3 text-sm  items-center my-8'>
+                     <div className=' mr-8 min-w-[50px]'>2 Feb</div>
+                     <div className='link-btn'>
+                        {' '}
+                        Docker: the Complete Guide, Udemy{' '}
+                     </div>
+                  </div>
                   <h3 className=' font-medium  text-lg mt-16'>2022</h3>
 
                   <div className='flex gap-3 text-sm  items-center my-8'>
