@@ -292,7 +292,7 @@ export default function Home() {
                               <a
                                  target={'_blank'}
                                  rel='noreferrer'
-                                 href='https://marriage-card-point-calculator.herokuapp.com/'
+                                 href='https://marriage.arunprajapati.com.np/'
                                  className=' link-btn hover:bg-[rgb(234,179,8)] hover:text-[rgb(41,37,36)] cursor-pointer px-[8px] py-[1px] flex items-center gap-1'>
                                  <span>Live</span>
 
