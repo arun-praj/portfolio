@@ -342,6 +342,164 @@ export default function Home() {
                      }}>
                      <section>
                         <div className='flex justify-between text-sm'>
+                           <h3 className=' font-medium'>
+                              KhwopaTech
+                           </h3>
+                           <div className='flex gap-3 text-sm'>
+                              {/* <a
+                                 target={'_blank'}
+                                 rel='noreferrer'
+                                 href='https://github.com/arun-praj/marriage-card-point-calculator'
+                                 className=' link-btn hover:bg-[rgb(234,179,8)] hover:text-[rgb(41,37,36)] cursor-pointer px-[8px] py-[1px] flex items-center gap-1'>
+                                 <span>Source</span>
+                                 <svg
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    className='icon icon-tabler icon-tabler-code hover:text-black'
+                                    width='16'
+                                    height='16'
+                                    viewBox='0 0 24 24'
+                                    strokeWidth='1.5'
+                                    stroke='#b0b0b0'
+                                    fill='none'
+                                    strokeLinecap='round'
+                                    strokeLinejoin='round'>
+                                    <path
+                                       stroke='none'
+                                       d='M0 0h24v24H0z'
+                                       fill='none'
+                                    />
+                                    <polyline points='7 8 3 12 7 16' />
+                                    <polyline points='17 8 21 12 17 16' />
+                                    <line x1='14' y1='4' x2='10' y2='20' />
+                                 </svg>
+                              </a> */}
+                              <a
+                                 target={'_blank'}
+                                 rel='noreferrer'
+                                 href='https://khwopatech.com/'
+                                 className=' link-btn hover:bg-[rgb(234,179,8)] hover:text-[rgb(41,37,36)] cursor-pointer px-[8px] py-[1px] flex items-center gap-1'>
+                                 <span>Live</span>
+
+                                 <svg
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    className='icon icon-tabler icon-tabler-activity'
+                                    width='16'
+                                    height='16'
+                                    viewBox='0 0 24 24'
+                                    strokeWidth='1.5'
+                                    stroke='#b0b0b0'
+                                    fill='none'
+                                    strokeLinecap='round'
+                                    strokeLinejoin='round'>
+                                    <path
+                                       stroke='none'
+                                       d='M0 0h24v24H0z'
+                                       fill='none'
+                                    />
+                                    <path d='M3 12h4l3 8l4 -16l3 8h4' />
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                        <div className=' text-sm  mt-1'>
+                           <Image
+                              src={'/icons/react.svg'}
+                              alt='react'
+                              height='14px'
+                              width={14}
+                           />
+                        </div>
+                        <p className='mt-4 mb-4 text-sm'>
+                           Static website for a client
+                        </p>
+                     </section>
+                  </li>
+                  <li
+                     className='pb-2 pl-0 mb-4  border-[rgb(28,25,23)] before:contents'
+                     style={{
+                        borderBottomWidth: '1px',
+                     }}>
+                     <section>
+                        <div className='flex justify-between text-sm'>
+                           <h3 className=' font-medium'>
+                              Krithya Studios
+                           </h3>
+                           <div className='flex gap-3 text-sm'>
+                              {/* <a
+                                 target={'_blank'}
+                                 rel='noreferrer'
+                                 href='https://github.com/arun-praj/marriage-card-point-calculator'
+                                 className=' link-btn hover:bg-[rgb(234,179,8)] hover:text-[rgb(41,37,36)] cursor-pointer px-[8px] py-[1px] flex items-center gap-1'>
+                                 <span>Source</span>
+                                 <svg
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    className='icon icon-tabler icon-tabler-code hover:text-black'
+                                    width='16'
+                                    height='16'
+                                    viewBox='0 0 24 24'
+                                    strokeWidth='1.5'
+                                    stroke='#b0b0b0'
+                                    fill='none'
+                                    strokeLinecap='round'
+                                    strokeLinejoin='round'>
+                                    <path
+                                       stroke='none'
+                                       d='M0 0h24v24H0z'
+                                       fill='none'
+                                    />
+                                    <polyline points='7 8 3 12 7 16' />
+                                    <polyline points='17 8 21 12 17 16' />
+                                    <line x1='14' y1='4' x2='10' y2='20' />
+                                 </svg>
+                              </a> */}
+                              <a
+                                 target={'_blank'}
+                                 rel='noreferrer'
+                                 href='https://krithyastudio.com/'
+                                 className=' link-btn hover:bg-[rgb(234,179,8)] hover:text-[rgb(41,37,36)] cursor-pointer px-[8px] py-[1px] flex items-center gap-1'>
+                                 <span>Live</span>
+
+                                 <svg
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    className='icon icon-tabler icon-tabler-activity'
+                                    width='16'
+                                    height='16'
+                                    viewBox='0 0 24 24'
+                                    strokeWidth='1.5'
+                                    stroke='#b0b0b0'
+                                    fill='none'
+                                    strokeLinecap='round'
+                                    strokeLinejoin='round'>
+                                    <path
+                                       stroke='none'
+                                       d='M0 0h24v24H0z'
+                                       fill='none'
+                                    />
+                                    <path d='M3 12h4l3 8l4 -16l3 8h4' />
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                        <div className=' text-sm  mt-1'>
+                           <Image
+                              src={'/icons/react.svg'}
+                              alt='react'
+                              height='14px'
+                              width={14}
+                           />
+                        </div>
+                        <p className='mt-4 mb-4 text-sm'>
+                           Static website for a client
+                        </p>
+                     </section>
+                  </li>
+                  <li
+                     className='pb-2 pl-0 mb-4  border-[rgb(28,25,23)] before:contents'
+                     style={{
+                        borderBottomWidth: '1px',
+                     }}>
+                     <section>
+                        <div className='flex justify-between text-sm'>
                            <h3 className='font-medium'>DairyEcommerce</h3>
                            <div className='flex gap-3 text-sm'>
                               <a
